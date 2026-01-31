@@ -38,7 +38,7 @@ test('Pos_Fun_0004',async ({ page }) => {
   const inputBox = page.locator('textarea');
   const outputBox = page.locator('div.whitespace-pre-wrap.overflow-y-auto.flex-grow.bg-slate-50');
 
-  await inputBox.fill('Mama monawath bonne naa. ');
+  await inputBox.fill('Mama monavath bonne naee. ');
   await expect(outputBox).toContainText('මම මොනවත් බොන්නෙ නෑ.');
   
 });
@@ -72,7 +72,7 @@ test('Pos_Fun_0007',async ({ page }) => {
   const outputBox = page.locator('div.whitespace-pre-wrap.overflow-y-auto.flex-grow.bg-slate-50');
 
   await inputBox.fill('Oyalage vaeda tika mama kalee naeththam mata pissu haedheyi.');
-  await expect(outputBox).toContainText('ඔයලගෙ වැඩ ටික මමම කලේ නැත්තම් මට පිස්සු හැදෙයි.');
+  await expect(outputBox).toContainText('ඔයලගෙ වැඩ ටික මම කලේ නැත්තම් මට පිස්සු හැදෙයි.');
   
 });
 
